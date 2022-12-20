@@ -1,5 +1,6 @@
 public class CreditPaymentService {
     public int calculate(int yearsOfLoan) {
+        
         float annualPercent = 9.99F;
         int loanMoneyAmount = 1_000_000;
         float monthlyRate = annualPercent / 100 / 12; // Ставка в месяц
@@ -7,5 +8,4 @@ public class CreditPaymentService {
         double totalLoanPayment = 12 * yearsOfLoan * monthlyPay;
         return (int) monthlyPay;
     }
-
 }
